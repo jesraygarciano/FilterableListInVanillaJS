@@ -85,14 +85,13 @@
 		//Get value of input
 		let filterValue = document.getElementById('filterInput').value.toUpperCase();
 
-		// Get names ui
-		let ul = document.getElementById('names');
-
-		// Get lis from ul
-		let li = ul.querySelectorAll('li.collection-item');
+      // Get names ul
+      let ul = document.getElementById('names');
+      // Get lis from ul
+      let li = ul.querySelectorAll('li.collection-item');
 
 		// loop through collection-item lis
-		for (var i = 0; i < li.length; i++) {
+		for (let i = 0; i < li.length; i++) {
 
 			let a = li[i].getElementsByTagName('a')[0];
 			// If matched
